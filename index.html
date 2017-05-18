@@ -35,6 +35,30 @@
 -webkit-animation:fade3 20s infinite;
     
 }  
+       
+        input.MyButton {
+width: 300px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+font-family: 'Montserrat', sans serif;
+background: #b1bcd1;
+color: #fff;
+border: 1px solid #b1bcd1;
+border-radius: 10px;
+-moz-box-shadow:: 6px 6px 5px #999;
+-webkit-box-shadow:: 6px 6px 5px #999;
+box-shadow:: 6px 6px 5px #999;
+}
+input.MyButton:hover {
+color: #ffff00;
+background: #000;
+border: 1px solid #fff;
+-moz-box-shadow:: 5px 5px 4px #adadad;
+-webkit-box-shadow:: 5px 5px 4px #adadad;
+box-shadow:: 5px 5px 4px #adadad;
+}
         
 @keyframes fade
 {
@@ -65,6 +89,9 @@
   <div class='slide2'></div>
   <div class='slide3'></div>
 </div>
+        <form>
+<input class="MyButton" type="button" value="Your Text Here" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
+</form>
     </body>
 </html>
 
