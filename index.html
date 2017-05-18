@@ -2,18 +2,65 @@
 <html>
 <head>
     <style type="text/css">
-        .slideshow {position: relative; height: 400px; width: 800px; overflow: hidden;}
-.slide { display: none; position: absolute;}
-.slide.current { display: block; }
+        .slider {
+  max-width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(https://raw.githubusercontent.com/mayashanker/sample/master/5.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+} 
+.slide2 {
+  background: url(https://raw.githubusercontent.com/mayashanker/sample/master/6.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(https://raw.githubusercontent.com/mayashanker/sample/master/7.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
     </style>
     </head>
     <body>
-    <div class="slideshow">
-    <img src="https://raw.githubusercontent.com/mayashanker/sample/master/5.jpg" class="slide current">
-    <img src="https://raw.githubusercontent.com/mayashanker/sample/master/6.jpg" class="slide">
-    <img src="https://raw.githubusercontent.com/mayashanker/sample/master/7.jpg" class="slide">
-    <img src="https://raw.githubusercontent.com/mayashanker/sample/master/8.jpg" class="slide">
-    </div>
+   <div class='slider'>
+  <div class='slide1'></div>
+  <div class='slide2'></div>
+  <div class='slide3'></div>
+</div>
     </body>
 </html>
 
